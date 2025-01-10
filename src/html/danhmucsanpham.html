@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGA GEAR - Cửa hàng Công nghệ hàng đầu Việt Nam</title>
+    <link rel="stylesheet" href="../css/t1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="../css/t2.css">
+</head>
+
+<body>
+    <div> <!--Tổng hợp cả bài 4 người-->
+        <header> <!--Lãm-->
+            <div class="header-banner">
+                <img src="../images/top_banner.webp" alt="Khuyến mãi đặc biệt">
+            </div>
+            <div class="main-info">
+                <a href="index.html" class="logo">
+                    <img src="../images/logo.webp" alt="EGA GEAR Logo">
+                </a>
+                <form class="search">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                    <button type="submit"><i class="fas fa-search"></i> Tìm</button>
+                </form>
+                <div class="login-cart">
+                    <a href="dangnhap.html" class="login-btn"><i class="fas fa-user"></i> Đăng nhập</a>
+                    <!-- Thay đổi nút giỏ hàng -->
+                    <a href="#" class="cart-btn open-cart-btn"><i class="fas fa-shopping-cart" style="color: #74C0FC;"></i> Giỏ hàng</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Giao diện giỏ hàng bên phải -->
+        <div class="cart-overlay hidden">
+            <div class="cart">
+                <button class="close-cart-btn">&times;</button>
+                <h2>Giỏ hàng</h2>
+                <div class="cart-empty">
+                    <img src="../images/cart_empty_background_11zon.png" alt="Empty Cart">
+                    <p class="cart-empty-text">Giỏ hàng chưa có gì!</p>
+                    <p>Hãy tìm sản phẩm ưng ý và thêm vào giỏ hàng bạn nhé</p>
+                    <a href="danhmucsanpham.html"><button>Tiếp tục mua sắm</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/giohang.js"></script>
+    <nav class="category-nav">
+        <div class="container">
+            <div class="left">
+                <a href="danhmucsanpham.html" class="menu-icon nav-link">
+                    <i class="fas fa-bars"></i>
+                    <span>Danh mục sản phẩm</span>
+                </a>
+            </div>
+            <div class="center">
+                <a href="#promotions" class="nav-link">Khuyến mãi</a>
+                <a href="tintuc.html" class="nav-link">Tin tức</a>
+                <a href="#contact" class="nav-link">Liên hệ</a>
+                <a href="#order-check" class="nav-link">Kiểm tra đơn hàng</a>
+            </div>
+            <div class="right">
+                <a href="#stores" class="nav-link">
+                    <i class="fas fa-store"></i>
+                    <span>Hệ thống cửa hàng</span>
+                </a>
+                <a href="#hotline" class="nav-link">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Hotline: 0123456789</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="khungmainsp">
+        <div class="mainsp">
+            <div class="locphankhuc">
+                <div class="textlpk">Chọn khoảng giá:</div>
+                <div class="cacphankhuc">
+                    <a href="">
+                        <div class="phankhuc">5 triệu - 10 triệu</div>
+                    </a>
+                </div>
+                <div class="cacphankhuc">
+                    <a href="">
+                        <div class="phankhuc">10 triệu - 20 triệu</div>
+                    </a>
+                </div>
+                <div class="cacphankhuc">
+                    <a href="">
+                        <div class="phankhuc">20 triệu - 30 triệu</div>
+                    </a>
+                </div>
+                <div class="cacphankhuc">
+                    <a href="">
+                        <div class="phankhuc">30 triệu - 50 triệu</div>
+                    </a>
+                </div>
+                <div class="cacphankhuc">
+                    <a href="">
+                        <div class="phankhuc">Trên 50 triệu</div>
+                    </a>
+                </div>
+            </div>
+            <div class="locphankhuc">
+                <div class="textlpk">Sắp xếp theo:</div>
+                <div class="sapxeptheo">
+                    <a href="">
+                        <div class="phankhuc">Mới nhất</div>
+                        <div class="phankhuc">Giá tăng dần</div>
+                        <div class="phankhuc">Giá giảm dần</div>
+                        <div class="phankhuc">Lượt xem</div>
+                        <div class="phankhuc">Đánh giá</div>
+                        <div class="phankhuc">Tên A->Z</div>
+                    </a>
+                </div>
+            </div>
+            <div class="tongday">
+                <div class="day">
+                    <div class="sanpham">
+                        <img src="../images/[New 100%] Laptop Asus TUF Gaming A15 FA506NF-HN005W.png" alt="">
+                        <div class="textsp">
+                            <a href="">
+                                <div class="tensanpham">[New 100%] Laptop Asus TUF Gaming A15 FA506NF-HN005W</div>
+                                <div class="danhgiasanpham">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    0 đánh giá
+                                </div>
+                                <div class="giasaukhuyenmai">15.690.000 đ</div>
+                                <div class="giatruockhuyenmai">22.990.000 đ</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sanpham">
+                        <div class="imagetop">
+                            <img src="../images/[New 100%] Laptop HP Envy x360 14-es0033dx 7H9Y1UA.jpg" alt="">
+                        </div>
+                        <div class="textsp">
+                            <a href="">
+                                <div class="tensanpham">[New 100%] Laptop HP Envy x360 14-es0033dx 7H9Y1UA</div>
+                                <div class="danhgiasanpham">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    0 đánh giá
+                                </div>
+                                <div class="giasaukhuyenmai">18.990.000 đ</div>
+                                <div class="giatruockhuyenmai">26.990.000 đ</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sanpham">
+                        <img src="../images/[New 100%] Laptop Lenovo IdeaPad 5 Pro 16IRH8 83AQ000PUS.jpg" alt="">
+                        <div class="textsp">
+                            <a href="">
+                                <div class="tensanpham">[New 100%] Laptop Lenovo IdeaPad 5 Pro 16IRH8 83AQ000PUS</div>
+                                <div class="danhgiasanpham">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    0 đánh giá
+                                </div>
+                                <div class="giasaukhuyenmai">25.390.000 đ</div>
+                                <div class="giatruockhuyenmai">33.990.000 đ</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sanpham">
+                        <img src="../images/[New 100%] Laptop Lenovo Yoga 6 13ABR8 83B2001UUS.jpg" alt="">
+                        <div class="textsp">
+                            <a href="">
+                                <div class="tensanpham">[New 100%] Laptop Lenovo Yoga 6 13ABR8 83B2001UUS</div>
+                                <div class="danhgiasanpham">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    0 đánh giá
+                                </div>
+                                <div class="giasaukhuyenmai">13.990.000 đ</div>
+                                <div class="giatruockhuyenmai">23.990.000 đ</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="sanpham">
+                        <img src="../images/[New 100%] Laptop MSI Cyborg 15 A12UCX-618VN.jpg" alt="">
+                        <div class="textsp">
+                            <a href="">
+                                <div class="tensanpham">[New 100%] Laptop MSI Cyborg 15 A12UCX-618VN</div>
+                                <div class="danhgiasanpham">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    0 đánh giá
+                                </div>
+                                <div class="giasaukhuyenmai">15.990.000 đ</div>
+                                <div class="giatruockhuyenmai">29.990.000 đ</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sanpham">
+                        <div class="imagetop">
+                            <img src="../images/[New Outlet] Laptop Acer Gaming Predator Helios Neo 16 PHN16-71-73RR NHQMAAA001.jpg"
+                                alt="">
+                        </div>
+                        <div class="textsp">
+                            <a href="">
+                                <div class="tensanpham">[New Outlet] Laptop Acer Gaming Predator Helios Neo 16
+                                    PHN16-71-73RR NHQMAAA001</div>
+                                <div class="danhgiasanpham">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    0 đánh giá
+                                </div>
+                                <div class="giasaukhuyenmai">23.990.000 đ</div>
+                                <div class="giatruockhuyenmai">25.990.000 đ</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sanpham">
+                        <img src="../images/[New Outlet] Laptop Acer Nitro 5 AN515-58-57QW.jpg" alt="">
+                        <div class="textsp">
+                            <a href="">
+                                <div class="tensanpham">[New Outlet] Laptop Acer Nitro 5 AN515-58-57QW</div>
+                                <div class="danhgiasanpham">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    0 đánh giá
+                                </div>
+                                <div class="giasaukhuyenmai">17.690.000 đ</div>
+                                <div class="giatruockhuyenmai">26.990.000 đ</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sanpham">
+                        <img src="../images/[New Outlet] Laptop Dell Inspiron 14 5430-PR2P1.jpg" alt="">
+                        <div class="textsp">
+                            <a href="">
+                                <div class="tensanpham">[New Outlet] Laptop Dell Inspiron 14 5430-PR2P1</div>
+                                <div class="danhgiasanpham">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    0 đánh giá
+                                </div>
+                                <div class="giasaukhuyenmai">17.390.000 đ</div>
+                                <div class="giatruockhuyenmai">26.990.000 đ</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="sanpham">
+                        <img src="../images/[New Outlet] Laptop Lenovo Slim 7 16IAH7 82VB0000US.jpg" alt="">
+                        <div class="textsp">
+                            <a href="">
+                                <div class="tensanpham">[New Outlet] Laptop Lenovo Slim 7 16IAH7 82VB0000US</div>
+                                <div class="danhgiasanpham">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    0 đánh giá
+                                </div>
+                                <div class="giasaukhuyenmai">20.990.000 đ</div>
+                                <div class="giatruockhuyenmai">29.990.000 đ</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sanpham">
+                        <div class="imagetop">
+                            <img src="../images/[New 100%] HP Victus 15 FB1013dx 845A2UA.jpg" alt="">
+                        </div>
+                        <div class="textsp">
+                            <a href="">
+                                <div class="tensanpham">[New 100%] HP Victus 15 FB1013dx 845A2UA</div>
+                                <div class="danhgiasanpham">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    0 đánh giá
+                                </div>
+                                <div class="giasaukhuyenmai">14.790.000 đ</div>
+                                <div class="giatruockhuyenmai">23.990.000 đ</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sanpham">
+                        <img src="../images/[New 100%] Laptop Asus Expert Book B1 B1400CEAE-EK4366.jpg" alt="">
+                        <div class="textsp">
+                            <a href="">
+                                <div class="tensanpham">[New 100%] Laptop Asus Expert Book B1 B1400CEAE-EK4366</div>
+                                <div class="danhgiasanpham">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    0 đánh giá
+                                </div>
+                                <div class="giasaukhuyenmai">8.590.000 đ</div>
+                                <div class="giatruockhuyenmai">15.990.000 đ</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sanpham">
+                        <img src="../images/[New 100%] Laptop Asus TUF Gaming F15 FX507VU-LP198W.jpg" alt="">
+                        <div class="textsp">
+                            <a href="">
+                                <div class="tensanpham">[New 100%] Laptop Asus TUF Gaming F15 FX507VU-LP198W</div>
+                                <div class="danhgiasanpham">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    0 đánh giá
+                                </div>
+                                <div class="giasaukhuyenmai">26.390.000 đ</div>
+                                <div class="giatruockhuyenmai">36.990.000 đ</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="sanpham">
+                        <img src="../images/[New 100%] Laptop ASUS Vivobook 15 OLED A1505VA-L1113W.jpg" alt="">
+                        <div class="textsp">
+                            <a href="">
+                                <div class="tensanpham">[New 100%] Laptop ASUS Vivobook 15 OLED A1505VA-L1113W</div>
+                                <div class="danhgiasanpham">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    0 đánh giá
+                                </div>
+                                <div class="giasaukhuyenmai">17.290.000 đ</div>
+                                <div class="giatruockhuyenmai">22.990.000 đ</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sanpham">
+                        <div class="imagetop">
+                            <img src="../images/[New 100%] Laptop Dell Inspiron 16 5620 R1605SDCXM888.jpg" alt="">
+                        </div>
+                        <div class="textsp">
+                            <a href="">
+                                <div class="tensanpham">[New 100%] Laptop Dell Inspiron 16 5620 R1605SDCXM888</div>
+                                <div class="danhgiasanpham">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    0 đánh giá
+                                </div>
+                                <div class="giasaukhuyenmai">14.590.000 đ</div>
+                                <div class="giatruockhuyenmai">19.990.000 đ</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sanpham">
+                        <img src="../images/[New 100%] Laptop Dell Inspiron 16 5620 R2608S DCXM888.jpg" alt="">
+                        <div class="textsp">
+                            <a href="">
+                                <div class="tensanpham">[New 100%] Laptop Dell Inspiron 16 5620 R2608S DCXM888</div>
+                                <div class="danhgiasanpham">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    0 đánh giá
+                                </div>
+                                <div class="giasaukhuyenmai">14.590.000 đ</div>
+                                <div class="giatruockhuyenmai">19.990.000 đ</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sanpham">
+                        <img src="../images/[New 100%] Laptop Dell Inspiron 16 5635-R1505S.jpg" alt="">
+                        <div class="textsp">
+                            <a href="">
+                                <div class="tensanpham">[New 100%] Laptop Dell Inspiron 16 5635-R1505S</div>
+                                <div class="danhgiasanpham">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    0 đánh giá
+                                </div>
+                                <div class="giasaukhuyenmai">12.990.000 đ</div>
+                                <div class="giatruockhuyenmai">15.990.000 đ</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chuyentrang">
+                <div class="boxso">
+                    <a href="">
+                        <div class="so">1</div>
+                    </a>
+                </div>
+                <div class="boxso">
+                    <a href="">
+                        <div class="so">2</div>
+                    </a>
+                </div>
+                <div class="boxso">
+                    <a href="">
+                        <div class="so">3</div>
+                    </a>
+                </div>
+                <div class="boxso">
+                    <a href="">
+                        <div class="so">4</div>
+                    </a>
+                </div>
+                <div class="boxso">
+                    <a href="">
+                        <div class="so">5</div>
+                    </a>
+                </div>
+                <div class="boxso">
+                    <a href="">
+                        <div class="so">6</div>
+                    </a>
+                </div>
+                <div class="boxso">
+                    <a href="">
+                        <div class="so">7</div>
+                    </a>
+                </div>
+                <div class="boxso">
+                    <a href="">
+                        <div class="so">8</div>
+                    </a>
+                </div>
+                <div class="boxso">
+                    <a href="">
+                        <div class="so">9</div>
+                    </a>
+                </div>
+                <div class="boxso">
+                    <a href="">
+                        <div class="so">10</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="khungfooter">
+        <div class="footer">
+            <div class="footer1">
+                <div class="giancach"><img src="../images/logoqqq.jpg" alt=""></div>
+                <div class="giancach">
+                    <div class="diachi">
+                        <div class=“chu”>
+                            Địa chỉ
+                            <br>
+                            <b>Khu 2 Hoàng Khương, Thanh Ba, Phú Thọ</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="giancach">
+                    <div class="lienhe">
+                        <div class="hotline">
+                            <div class=“chu”>
+                                Hotline<br>
+                                <b>0123456789</b>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div class=“chu”>
+                                Email<br>
+                                <b>laptop@gmail.com</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="giancach">
+                    <div class="xahoi">
+                        <div class=“chu”>
+                            <b>Mạng xã hội</b>
+                        </div>
+                        <div class="iconxahoi">
+                            <img src="../images/facebook.webp" alt="">
+                            <img src="../images/youtube.webp" alt="">
+                            <img src="../images/tiktok.webp" alt="">
+                            <img src="../images/zalo.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer1">
+                <div class=“chu”>
+                    <b>Hỗ trợ khách hàng</b>
+                    <ul>
+                        <li>Hệ thống cửa hàng</li>
+                        <li>Câu hỏi thường gặp</li>
+                        <li>Kiểm tra đơn hàng</li>
+                        <li>Liên hệ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer1">
+                <div class="giancach">
+                    <div class=“chu”>
+                        <b>Chính sách</b>
+                        <br>
+                        <ul>
+                            <li>Chính sách bảo hành</li>
+                            <li>Chính sách đổi trả</li>
+                            <li>Chính sách bảo mật</li>
+                            <li>Điều khoản dịch vụ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="giancach">
+                    <div class=“chu”>
+                        <b>Tổng đài hỗ trợ</b>
+                        <br>
+                        <ul>
+                            <li>Gọi mua hàng: <b>0123456789</b></li>
+                            <li>Gọi bảo hành: <b>0987654321</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer2">
+                <div class="giancach">
+                    <div class=“chu”>
+                        <b>Đăng ký nhận ưu đãi</b>
+                        <br><br>
+                        Bạn có muốn nhận khuyến mãi đặc biệt? Đăng kí tham gia ngay cộng đồng người theo dõi của chúng
+                        tôi để cập nhật khuyến mãi ngay lập tức.
+                    </div>
+                </div>
+                <div class="giancach">
+                    <div class="phandangkyuudai">
+                        <div class="nhapemail"><input type="text" placeholder="Email của bạn..." width="60px"
+                                height="30px"></div>
+                        <div class="dangky">
+                            <a href="">
+                                <div class="nutdangky">Đăng ký</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="giancach">
+                    <div class=“chu”><b>PHƯƠNG THỨC THANH TOÁN</b></div>
+                    <div class="congthanhtoan"><a href=""><img src="../images/visa.webp" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
