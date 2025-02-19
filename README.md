@@ -90,7 +90,7 @@
 ## Yêu Cầu Kỹ Thuật
 
 - **Frontend:** HTML, CSS, JavaScript.
-- **Backend:** Node.js.
+- **Backend:** Java spring boot.
 - **Cơ sở dữ liệu:** MySQL.
 
 ---
