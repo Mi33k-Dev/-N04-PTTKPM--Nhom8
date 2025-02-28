@@ -89,7 +89,7 @@
 
 ## Yêu Cầu Kỹ Thuật
 
-- **Frontend:** HTML, CSS, JavaScript.
+- **Frontend:** Reactjs.
 - **Backend:** Java spring boot.
 - **Cơ sở dữ liệu:** MySQL.
 
